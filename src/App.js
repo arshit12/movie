@@ -23,4 +23,4 @@ function App() {
 
 export default App;
 // netlify
-// https://65d4b36708061fe75dc0316f--leafy-moonbeam-ea2f06.netlify.app/
+// https://6620ee8c5fc4e628fc503bad--tubular-bienenstitch-1c36e3.netlify.app/

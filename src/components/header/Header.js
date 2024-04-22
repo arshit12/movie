@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
 
+
 const Header = () => {
     const [query, setQuery] = useState("");
     const [searchResults, setSearchResults] = useState([]);
@@ -13,7 +14,7 @@ const Header = () => {
     const handleSearch = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=YOUR_API_KEY&include_adult=false&language=en-US&page=1`);
+            const response = await fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&api_key=4e44d9029b1270a757cddc766a1bcb63&include_adult=false&language=en-US`);
             const data = await response.json();
             setSearchResults(data.results);
         } catch (error) {
@@ -48,6 +49,7 @@ const Header = () => {
                     </ul>
                 </div>
             )}
+            
         </div>
     );
 };
